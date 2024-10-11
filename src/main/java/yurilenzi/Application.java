@@ -25,14 +25,21 @@ public class Application {
 
     public static void main(String[] args) {
 
+        /*
+        Ho messo i salvataggi delle tabelle dentro dei metodi esterni, le query più complesse le ho provate qui nel main
+        Noterai degli errori di battitura nelle classi e nelle variabili, non sono stato a metterli a posto, perché me ne sono
+        accorto troppo tardi.
+        */
 
-
-        List<Articolo> articoliFromdb = articoloDAO.getIdArticoli();
+        //Ricerca per anno
         articoloDAO.getArticoloFromData(1974).forEach(System.out::println);
+        //Ricerca per autore
         libroDAO.findForAuthor("Penelope").forEach(System.out::println);
+        //Ricerca per titolo
         articoloDAO.findByTitolo("The Last").forEach(System.out::println);
-
+        //Ricerca elementi attualmente in prestito
         System.out.println(prestitiDAO.cercaArticoloDaPrestito(57));
+        //Ricerca prestiti scaduti
         prestitiDAO.prestitiScaduti().forEach(System.out::println);
 
 
