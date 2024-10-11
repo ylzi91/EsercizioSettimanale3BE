@@ -37,13 +37,13 @@ public class Libro extends Articolo{
 
     @Override
     public String toString() {
-        return "Libro{" +
-                "autore='" + autore + '\'' +
-                ", genere='" + genere + '\'' +
-                ", id_articolo=" + idArticolo +
-                ", Titolo='" + Titolo + '\'' +
-                ", annoPubblicazione=" + annoPubblicazione +
-                ", numeroPagine=" + numeroPagine +
-                "} " + super.toString();
+        return "Libro{\n" +
+                "autore='\n" + autore + '\'' +
+                ", genere='\n" + genere + '\'' +
+                ", id_articolo=\n" + idArticolo +
+                ", Titolo='\n" + Titolo + '\'' +
+                ", annoPubblicazione=\n" + annoPubblicazione +
+                ", numeroPagine=\n" + numeroPagine +
+                "} ";
     }
 }

@@ -82,4 +82,16 @@ public class Prestito {
     public void setUtente(Utente utente) {
         this.utente = utente;
     }
+
+    @Override
+    public String toString() {
+        return "Prestito{\n" +
+                "idPrestito=\n" + idPrestito +
+                ", articolo=\n" + articolo +
+                ", dataInizioPrestito=\n" + dataInizioPrestito +
+                ", data_restituzione_prevista=\n" + data_restituzione_prevista +
+                ", getData_restituzione_effettiva=\n" + getData_restituzione_effettiva +
+                ", utente=\n" + utente +
+                '}';
+    }
 }

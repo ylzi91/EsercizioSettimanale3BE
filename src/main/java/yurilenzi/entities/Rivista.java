@@ -35,6 +35,6 @@ public class Rivista extends Articolo{
                 ", Titolo='" + Titolo + '\'' +
                 ", annoPubblicazione=" + annoPubblicazione +
                 ", numeroPagine=" + numeroPagine +
-                "} " + super.toString();
+                "} ";
     }
 }

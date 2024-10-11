@@ -32,6 +32,8 @@ public class Application {
         libroDAO.findForAuthor("Penelope").forEach(System.out::println);
         articoloDAO.findByTitolo("The Last").forEach(System.out::println);
 
+        System.out.println(prestitiDAO.cercaArticoloDaPrestito(57));
+        prestitiDAO.prestitiScaduti().forEach(System.out::println);
 
 
 

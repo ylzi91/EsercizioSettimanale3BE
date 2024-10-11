@@ -46,4 +46,6 @@ public class ArticoloDAO {
         transaction.commit();
         System.out.println("L'aritocolo '" + found.getTitolo() + "' è stato cancellato");
     }
+
+
 }
